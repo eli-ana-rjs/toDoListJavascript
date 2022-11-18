@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>To Do List</title>
 </head>
 <body>
-    
+
+    <h1>Cosas para hacer</h1>
+
+    <div class="input-div">
+        <input type="text" class="input" placeholder="Tarea a agregar">
+        <button class="btn-agregar">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+    <div class="container">
+        <input type="text" class="item-input" disabled>
+        <button class="btn-editar">
+            <i class="fa-duotone fa-lock"></i>
+            <i class="fa-duotone fa-lock-open"></i>
+        </button>
+        <button class="btn-remover">
+            <i class="fa-duotone fa-trash"></i>
+            
+        </button>
+    </div>
+
+    <script src="https://kit.fontawesome.com/ba0ece2d64.js"></script>
 </body>
 </html>
