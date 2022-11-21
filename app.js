@@ -1,4 +1,4 @@
-/* Sleccionar elementos pincipales del HTMl por medio de Javascript */
+/* Seleccionar elementos pincipales del HTMl por medio de Javascript */
 
 const inputPrincipal = document.querySelector('.input');
 const btnAgregar = document.querySelector('.btn-agregar');
