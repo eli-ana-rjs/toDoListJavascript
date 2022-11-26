@@ -2,7 +2,7 @@
 
 const inputPrincipal = document.querySelector('.input');
 const btnAgregar = document.querySelector('.btn-agregar');
-const container = document.querySelector('.container');
+const container = document.querySelector('.items-lista');
 
 /* Crear la clase Item.  */
 class Item {

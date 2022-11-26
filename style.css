@@ -1,11 +1,21 @@
 /* Estilos generales */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 body {
-    background-color: rgb(27, 49, 82);
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/imgTpTodo\ .png');
+    background-position: initial;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    
 }
 
 h1 {
@@ -33,7 +43,8 @@ h1 {
 }
 
 /* Estilos de los botones */
-.btn-agregar, .boton-editar,
+.btn-agregar,
+.boton-editar,
 .boton-remover {
     width: 50px;
     height: 50px;
@@ -43,7 +54,7 @@ h1 {
     cursor: pointer;
 }
 
-.btn-agregar{
+.btn-agregar {
     background-color: rgb(255, 6, 46);
     color: white;
 }
@@ -65,4 +76,88 @@ h1 {
 
 .item {
     margin: 10px;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.822);
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.3em;
+    padding-top: 5%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 360px) and (max-width:650px) {
+
+    .body {
+        overflow-x: hidden;
+        display: flex;
+
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .container-ppal {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    .input-div,
+    .items-lista {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .input-div{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .input,
+    .item-input {
+        width: 60%;
+        height: 30px;
+        
+    }
+
+    .item-input{
+        width: 42%;
+        font-size: 1em;
+    }
+
+    .boton-editar,
+    .boton-remover,
+    .btn-agregar {
+        width: 30px;
+        height: 30px;
+        margin: 3px;
+        border-radius: 5px;
+    }
+
+    p{
+        font-size: 1.4em;
+    }
+
+    ::placeholder {
+        font-size: 0.6em;
+    }
 }
